@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q6i28vVNWnQJPZC/qLkHN/GQb43RwxRMuPCAzK8O4enhjFdtN70GwhMEKLmTS/7LzTL7GB0j6C8yy4UBA8rq8A==",
+  "dgSpecHash": "opmO8mNaGOtbHeFeaXZ+xo3BZTCbXasX8mlUj5/GfKwias8H9ehSAXLCkad+j9wmoCuUKu1xmoSVxY7EkkkU+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Desktop\\ntpilk\\OkulAppSube1BIL\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\Desktop\\ntpilk\\NTPYENIVERSIYON\\OkulAppSube1BIL\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

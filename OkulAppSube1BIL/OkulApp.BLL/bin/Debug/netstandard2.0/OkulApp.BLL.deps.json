@@ -12,7 +12,6 @@
           "DAL": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "OkulApp.MODEL": "1.0.0",
-          "System.Configuration.ConfigurationManager": "8.0.0",
           "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
@@ -176,10 +175,6 @@
         }
       },
       "OkulApp.MODEL/1.0.0": {
-        "dependencies": {
-          "System.Configuration.ConfigurationManager": "8.0.0",
-          "System.Data.SqlClient": "4.8.5"
-        },
         "runtime": {
           "OkulApp.MODEL.dll": {}
         }

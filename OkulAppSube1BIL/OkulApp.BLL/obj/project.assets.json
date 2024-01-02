@@ -307,10 +307,6 @@
       "OkulApp.MODEL/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Configuration.ConfigurationManager": "8.0.0",
-          "System.Data.SqlClient": "4.8.5"
-        },
         "compile": {
           "bin/placeholder/OkulApp.MODEL.dll": {}
         },
@@ -1030,7 +1026,6 @@
       "DAL >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "OkulApp.MODEL >= 1.0.0",
-      "System.Configuration.ConfigurationManager >= 8.0.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
@@ -1041,11 +1036,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer\\Desktop\\ntpilk\\OkulAppSube1BIL\\OkulApp.BLL\\OkulApp.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\Acer\\Desktop\\ntpilk\\NTPYENIVERSIYON\\OkulAppSube1BIL\\OkulApp.BLL\\OkulApp.BLL.csproj",
       "projectName": "OkulApp.BLL",
-      "projectPath": "C:\\Users\\Acer\\Desktop\\ntpilk\\OkulAppSube1BIL\\OkulApp.BLL\\OkulApp.BLL.csproj",
+      "projectPath": "C:\\Users\\Acer\\Desktop\\ntpilk\\NTPYENIVERSIYON\\OkulAppSube1BIL\\OkulApp.BLL\\OkulApp.BLL.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Acer\\Desktop\\ntpilk\\OkulAppSube1BIL\\OkulApp.BLL\\obj\\",
+      "outputPath": "C:\\Users\\Acer\\Desktop\\ntpilk\\NTPYENIVERSIYON\\OkulAppSube1BIL\\OkulApp.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1067,11 +1062,11 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\Acer\\Desktop\\ntpilk\\OkulAppSube1BIL\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Acer\\Desktop\\ntpilk\\OkulAppSube1BIL\\DAL\\DAL.csproj"
+            "C:\\Users\\Acer\\Desktop\\ntpilk\\NTPYENIVERSIYON\\OkulAppSube1BIL\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Acer\\Desktop\\ntpilk\\NTPYENIVERSIYON\\OkulAppSube1BIL\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\Acer\\Desktop\\ntpilk\\OkulAppSube1BIL\\OkulApp.MODEL\\OkulApp.MODEL.csproj": {
-              "projectPath": "C:\\Users\\Acer\\Desktop\\ntpilk\\OkulAppSube1BIL\\OkulApp.MODEL\\OkulApp.MODEL.csproj"
+            "C:\\Users\\Acer\\Desktop\\ntpilk\\NTPYENIVERSIYON\\OkulAppSube1BIL\\OkulApp.MODEL\\OkulApp.MODEL.csproj": {
+              "projectPath": "C:\\Users\\Acer\\Desktop\\ntpilk\\NTPYENIVERSIYON\\OkulAppSube1BIL\\OkulApp.MODEL\\OkulApp.MODEL.csproj"
             }
           }
         }
@@ -1091,10 +1086,6 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
-          },
-          "System.Configuration.ConfigurationManager": {
-            "target": "Package",
-            "version": "[8.0.0, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",
