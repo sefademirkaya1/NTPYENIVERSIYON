@@ -3,6 +3,7 @@ using System;
 using System.Data.SqlClient;
 using System.Runtime.CompilerServices;
 using DAL;
+using System.Windows.Forms;
 
 namespace OkulApp.BLL
 {
@@ -17,7 +18,7 @@ namespace OkulApp.BLL
                          };
 
             Helper hlp = new Helper();
-            return hlp.ExecuteNonQuery("Insert into tblOgrenciler values(@Ad,@Soyad,@Numara)", p) > 0;
+            return hlp.ExecuteNonQuery("Insert into dblogrenciler values(@Ad,@Soyad,@Numara)", p) > 0;
 
         }
 
@@ -30,21 +31,23 @@ namespace OkulApp.BLL
                              new SqlParameter("@Ogrenciid",ogr.Ogrenciid)
                          };
             Helper hlp = new Helper();
-            return hlp.ExecuteNonQuery("Update tblOgrenciler set Ad=@Ad,Soyad=@Soyad,Numara=@Numara where OgrenciId=@Ogrenciid", p) > 0;
+            return hlp.ExecuteNonQuery("Update dblogrenciler set Ad=@Ad,Soyad=@Soyad,Numara=@Numara where OgrenciId=@Ogrenciid", p) > 0;
         }
 
-        public bool OgrenciSil(int id)
+        public bool OgrenciSil(string numara)
         {
-            SqlParameter[] p = { new SqlParameter("@OgrenciId", id) };
+            SqlParameter[] p = { new SqlParameter("@Numara", numara) };
             Helper hlp = new Helper();
-            return hlp.ExecuteNonQuery("Delete from tblOgrenciler where OgrenciId=@OgrenciId", p) > 0;
+            return hlp.ExecuteNonQuery("Delete from dblogrenciler where Numara=@Numara", p) > 0;
         }
+
+
 
         public Ogrenci OgrenciBul(string numara)
         {
             SqlParameter[] p = { new SqlParameter("@Numara", numara) };
             Helper hlp = new Helper();
-            var dr = hlp.ExecuteReader("Select OgrenciId,Ad,Soyad,Numara from tblOgrenciler where Numara=@Numara", p);
+            var dr = hlp.ExecuteReader("Select OgrenciId,Ad,Soyad,Numara from dblogrenciler where Numara=@Numara", p);
             Ogrenci ogr = null;
             if (dr.Read())
             {

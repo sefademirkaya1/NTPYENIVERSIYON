@@ -14,3 +14,15 @@ C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\obj\Deb
 C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\obj\Debug\netstandard2.0\OkulApp.BLL.csproj.CopyComplete
 C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\obj\Debug\netstandard2.0\OkulApp.BLL.dll
 C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\obj\Debug\netstandard2.0\OkulApp.BLL.pdb
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\System.Windows.Forms.dll
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\System.Security.dll
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\System.Configuration.dll
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\Accessibility.dll
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\System.Deployment.dll
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\System.Windows.Forms.xml
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\System.Security.xml
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\System.Configuration.xml
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\Accessibility.xml
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\System.Deployment.xml
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulApp.BLL\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.xml

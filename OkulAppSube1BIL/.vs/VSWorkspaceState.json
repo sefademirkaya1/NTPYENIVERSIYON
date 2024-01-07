@@ -3,8 +3,9 @@
     "",
     "\\DAL",
     "\\OkulApp.BLL",
+    "\\OkulApp.MODEL",
     "\\OkulAppSube1BIL"
   ],
-  "SelectedNode": "\\OkulAppSube1BIL.sln",
+  "SelectedNode": "\\OkulApp.BLL\\OgrenciBL.cs",
   "PreviewInSolutionExplorer": false
 }

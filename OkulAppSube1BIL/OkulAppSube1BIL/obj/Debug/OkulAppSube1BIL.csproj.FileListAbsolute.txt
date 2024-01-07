@@ -20,3 +20,4 @@ C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulAppSube1BIL\obj
 C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulAppSube1BIL\obj\Debug\OkulAppSube1BIL.csproj.CopyComplete
 C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulAppSube1BIL\obj\Debug\OkulAppSube1BIL.exe
 C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulAppSube1BIL\obj\Debug\OkulAppSube1BIL.pdb
+C:\Users\Acer\Desktop\ntpilk\NTPYENIVERSIYON\OkulAppSube1BIL\OkulAppSube1BIL\obj\Debug\OkulAppSube1BIL.frmOgretmenEkle.resources

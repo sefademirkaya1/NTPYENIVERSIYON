@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OkulApp.BLL;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace OkulAppSube1BIL
 {
@@ -47,30 +48,119 @@ namespace OkulAppSube1BIL
                 MessageBox.Show("Bilinmeyen Hata!!");
             }
         }
-
         private void btnBul_Click(object sender, EventArgs e)
         {
-            frmOgrBul frm = new frmOgrBul(this);
-            frm.Show();
+            try
+            {
+                frmOgrBul frm = new frmOgrBul(this);
+                frm.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+           
+            btnGuncelle.Enabled = true;
         }
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-            var obl = new OgrenciBL();
-            obl.OgrenciGuncelle(new Ogrenci { Ad = txtAd.Text.Trim(), Soyad = txtSoyad.Text.Trim(), Numara = txtNumara.Text.Trim(), Ogrenciid = Ogrenciid });
+            try
+            {
+                var obl = new OgrenciBL();
+                bool sonuc2 = obl.OgrenciGuncelle( new Ogrenci
+                {
+                    Ad = txtAd.Text.Trim(),
+                    Soyad = txtSoyad.Text.Trim(),
+                    Numara = txtNumara.Text.Trim(),
+                    Ogrenciid = Ogrenciid
+                });
+
+                if (sonuc2)
+                {
+                    MessageBox.Show("Güncelleme Başarılı!");
+                  
+                    btnGuncelle.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Güncelleme Başarısız!!");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Bilinmeyen Hata!!");
+            }
         }
+
 
         private void btnSil_Click(object sender, EventArgs e)
         {
             var obl = new OgrenciBL();
-            obl.OgrenciSil(Ogrenciid);
+
+            string numara = txtNumara.Text.Trim();
+
+            if (!string.IsNullOrEmpty(numara)) 
+            {
+                bool sonuc = obl.OgrenciSil(numara);
+
+                if (sonuc)
+                {
+                    MessageBox.Show("Öğrenci başarıyla silindi.", "Silme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Öğrenci silinirken bir hata oluştu.", "Silme Hatası", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen bir öğrenci numarası girin.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
+
+        private void txtNumara_TextChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("TextChanged olayı tetiklendi.");
+            btnSil.Enabled = !string.IsNullOrWhiteSpace(txtNumara.Text.Trim());
+        }
+
+        private void SilButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("TextBoxlar temizlendi.");
+
+           
+            TemizleGroupBoxControls(grpOgrenci); 
+        }
+
+        private void TemizleGroupBoxControls(Control temizle)
+        {
+            
+            foreach (Control control in temizle.Controls)
+            {
+                if (control is TextBox textBox)
+                {
+                 
+                    textBox.Clear();
+                }
+
+                
+            }
+        }
+
+
+
     }
+
 
     //Güncelleme Başarılı mesajı
     //Güncelleme butonu aktifliği?
     //Silme butonu aktifliği
-    //Silme işlemi mesajı
+    //Silme işlemi mesajı    
     //Tüm işlemlerde try-catch
     //Helperda bulunan connection ve commandlerin dispose edilmesi (IDisposable Pattern)
     //Singleton Pattern (Sürkeli nesne oluşmadan tek nesne üstünden işlemlerin yapılması)
@@ -78,27 +168,47 @@ namespace OkulAppSube1BIL
 
 
 
-    interface ITransfer
-    {
-        int Eft(string gondericiiban, string aliciiban, double tutar);
-        int Havale(string gondericiiban, string aliciiban, double tutar);
 
-    }
 
-    class Transfer : ITransfer
-    {
-        public int Eft(string gondericiiban, string aliciiban, double tutar)
-        {
-            throw new NotImplementedException();
-        }
 
-        public int Havale(string gondericiiban, string aliciiban, double tutar)
-        {
-            throw new NotImplementedException();
-        }
+    // IDisposable Pattern :Disposable Pattern, nesne yönetimi ve kaynak temizleme (resource cleanup) için kullanılan bir tasarım desenidir.
+    // Bu desen, özellikle unmanaged (yönetilmeyen) kaynakları kullanırken ve nesnelerin bellekten düzenli bir şekilde
+    // serbest bırakılmasını sağlamak için kullanılır.
+    //Disposable Pattern, .NET'te IDisposable arayüzü üzerine kurulmuştur.
+    //Bu arayüz, Dispose metodunu tanımlar ve bir sınıf bu arayüzü uyguladığında, bu metodun çağrılması nesnenin temizlenmesini sağlar.
+    //---------------------------------------------------------------------------
 
-        //
-    }
+
+    // Singleton Pattern :Singleton Pattern, bir sınıfın yalnızca bir örneğinin (instance) oluşturulmasını ve bu örneğe global bir erişim noktası
+    // sağlanmasını sağlayan bir tasarım desenidir. Bu desen, bir sınıfın tek bir örneğini tutarak bu örneğe tüm uygulama genelinde tek bir noktadan erişmeyi sağlar.
+    // Singleton Pattern, genellikle kaynakları paylaşmak veya kontrol noktası sağlamak amacıyla kullanılır.
+
+
+
+
+
+
+    //interface ITransfer
+    //{
+    //    int Eft(string gondericiiban, string aliciiban, double tutar);
+    //    int Havale(string gondericiiban, string aliciiban, double tutar);
+
+    //}
+
+    //class Transfer : ITransfer
+    //{
+    //    public int Eft(string gondericiiban, string aliciiban, double tutar)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public int Havale(string gondericiiban, string aliciiban, double tutar)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    //
+    //}
 }
 
 //Garbage Collector
