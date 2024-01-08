@@ -62,10 +62,7 @@ namespace OkulAppSube1BIL
             }
         }
 
-        private void TextBox_TextChanged(object sender, EventArgs e)
-        {
-            btnGuncelle.Enabled = true;
-        }
+        
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
@@ -83,7 +80,7 @@ namespace OkulAppSube1BIL
                 if (sonuc2)
                 {
                     MessageBox.Show("Güncelleme Başarılı!");
-                    btnGuncelle.Enabled = false;
+                  
                 }
                 else
                 {
