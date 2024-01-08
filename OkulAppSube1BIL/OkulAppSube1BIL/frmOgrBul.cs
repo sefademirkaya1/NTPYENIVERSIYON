@@ -40,6 +40,7 @@ namespace OkulAppSube1BIL
 
                 
                 frm.EnableDisableBtnSil(true);
+                 frm.EnableDisableBtnGuncelle(true);
             }
             else
             {
@@ -47,6 +48,8 @@ namespace OkulAppSube1BIL
 
                 // Öğrenci bulunamadığında btnSil'i devre dışı bırak
                 frm.EnableDisableBtnSil(false);
+                //güncelleyi devre dışı bırakma
+                frm.EnableDisableBtnGuncelle(false);
             }
         }
     }
