@@ -143,6 +143,10 @@ namespace OkulAppSube1BIL
         {
             btnSil.Enabled = enable;
         }
+        public void EnableDisableBtnGuncelle(bool enable)   //Günceleme butonu
+        { 
+       btnGuncelle.Enabled = enable;
+        }
     }
 }
 
