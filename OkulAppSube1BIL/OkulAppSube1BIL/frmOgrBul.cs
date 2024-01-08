@@ -26,6 +26,15 @@ namespace OkulAppSube1BIL
                 frm.txtSoyad.Text = ogr.Soyad;
                 frm.txtNumara.Text = ogr.Numara;
                 frm.Ogrenciid = ogr.Ogrenciid;
+<<<<<<< HEAD
+=======
+                this.Close();
+            }
+            else
+           {
+             MessageBox.Show("Öğrenci bulunamadı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+>>>>>>> 72cfb316f2fecede86a1f64ea566f216ee72d9e9
 
                 // Sadece öğrenci bulunduğunda formu kapat
                 this.Close();
