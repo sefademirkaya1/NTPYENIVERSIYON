@@ -1,7 +1,7 @@
-﻿using OkulApp.BLL;
+using OkulApp.BLL;
 using OkulApp.MODEL;
-using System.Windows.Forms;
 using System;
+using System.Windows.Forms;
 
 namespace OkulAppSube1BIL
 {
@@ -17,36 +17,35 @@ namespace OkulAppSube1BIL
 
         private void btnBul_Click(object sender, EventArgs e)
         {
-            var obl = new OgrenciBL();
-            Ogrenci ogr = obl.OgrenciBul(txtOgrNo.Text.Trim());
-
-            if (ogr != null)
+            try
             {
-                frm.txtAd.Text = ogr.Ad;
-                frm.txtSoyad.Text = ogr.Soyad;
-                frm.txtNumara.Text = ogr.Numara;
-                frm.Ogrenciid = ogr.Ogrenciid;
+                var obl = new OgrenciBL();
+                Ogrenci ogr = obl.OgrenciBul(txtOgrNo.Text.Trim());
 
-                this.Close();
+                if (ogr != null)
+                {
+                    frm.txtAd.Text = ogr.Ad;
+                    frm.txtSoyad.Text = ogr.Soyad;
+                    frm.txtNumara.Text = ogr.Numara;
+                    frm.Ogrenciid = ogr.Ogrenciid;
+
+                    this.Close();
+
+                    frm.EnableDisableBtnSil(true);
+                    frm.EnableDisableBtnGuncelle(true);
+                }
+                else
+                {
+                    MessageBox.Show("Öğrenci bulunamadı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Öğrenci bulunamadığında btnSil ve btnGuncelle'yi devre dışı bırak
+                    frm.EnableDisableBtnSil(false);
+                    frm.EnableDisableBtnGuncelle(false);
+                }
             }
-            else
-             {
-             MessageBox.Show("Öğrenci bulunamadı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-             }
-                //öğrenci bulunduğunda formu kapat
-                this.Close();
-                
-                frm.EnableDisableBtnSil(true);
-                
-                 frm.EnableDisableBtnGuncelle(true);
-            }
-            else
+            catch (Exception ex)
             {
-                // Öğrenci bulunamadığında btnSili devre dışı bırak
-                frm.EnableDisableBtnSil(false);
-                
-                //güncellemeyi devre dışı bırakma
-                frm.EnableDisableBtnGuncelle(false);
+                MessageBox.Show($"Hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
