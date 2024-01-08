@@ -62,7 +62,10 @@ namespace OkulAppSube1BIL
             }
         }
 
-        
+          public void EnableDisableBtnGuncelle(bool enable)   //Günceleme butonu
+        { 
+            btnGuncelle.Enabled = enable;
+        }
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
@@ -91,8 +94,13 @@ namespace OkulAppSube1BIL
             {
                 MessageBox.Show("Bilinmeyen Hata!!");
             }
+        } 
+        
+    // ÖğrenciBul formundan gelen btnSil butonunu etkinleştir/devre dışı bırak
+        public void EnableDisableBtnSil(bool enable)
+        {
+            btnSil.Enabled = enable;
         }
-
         private void btnSil_Click(object sender, EventArgs e)
         {
             var obl = new OgrenciBL();
@@ -123,7 +131,6 @@ namespace OkulAppSube1BIL
             MessageBox.Show("TextBoxlar temizlendi.");
             TemizleGroupBox(grpOgrenci);
         }
-
         private void TemizleGroupBox(Control temizle)
         {
             foreach (Control control in temizle.Controls)
@@ -135,15 +142,8 @@ namespace OkulAppSube1BIL
             }
         }
 
-        // ÖğnenciBul formundan gelen btnSil butonunu etkinleştir/devre dışı bırak
-        public void EnableDisableBtnSil(bool enable)
-        {
-            btnSil.Enabled = enable;
-        }
-        public void EnableDisableBtnGuncelle(bool enable)   //Günceleme butonu
-        { 
-       btnGuncelle.Enabled = enable;
-        }
+       
+      
     }
 }
 
