@@ -121,10 +121,10 @@ namespace OkulAppSube1BIL
         private void SilButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("TextBoxlar temizlendi.");
-            TemizleGroupBoxControls(grpOgrenci);
+            TemizleGroupBox(grpOgrenci);
         }
 
-        private void TemizleGroupBoxControls(Control temizle)
+        private void TemizleGroupBox(Control temizle)
         {
             foreach (Control control in temizle.Controls)
             {
