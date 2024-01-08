@@ -120,11 +120,7 @@ namespace OkulAppSube1BIL
             }
         }
 
-        private void txtNumara_TextChanged(object sender, EventArgs e)
-        {
-            btnSil.Enabled = !string.IsNullOrWhiteSpace(txtNumara.Text.Trim());
-        }
-
+     
         private void SilButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("TextBoxlar temizlendi.");
