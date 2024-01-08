@@ -33,6 +33,11 @@ namespace OkulAppSube1BIL
                 frm.txtSoyad.Text = ogr.Soyad;
                 frm.txtNumara.Text = ogr.Numara;
                 frm.Ogrenciid = ogr.Ogrenciid;
+                this.Close();
+            }
+            else
+           {
+             MessageBox.Show("Öğrenci bulunamadı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
