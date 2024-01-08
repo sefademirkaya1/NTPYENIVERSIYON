@@ -46,9 +46,9 @@ namespace OkulAppSube1BIL
             {
                 MessageBox.Show("Öğrenci bulunamadı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Öğrenci bulunamadığında btnSil'i devre dışı bırak
+                // Öğrenci bulunamadığında btnSili devre dışı bırak
                 frm.EnableDisableBtnSil(false);
-                //güncelleyi devre dışı bırakma
+                //güncellemeyi devre dışı bırakma
                 frm.EnableDisableBtnGuncelle(false);
             }
         }
