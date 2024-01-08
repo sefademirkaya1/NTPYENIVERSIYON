@@ -30,24 +30,21 @@ namespace OkulAppSube1BIL
                 this.Close();
             }
             else
-           {
+             {
              MessageBox.Show("Öğrenci bulunamadı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-
-
+             }
                 //öğrenci bulunduğunda formu kapat
                 this.Close();
-
                 
                 frm.EnableDisableBtnSil(true);
+                
                  frm.EnableDisableBtnGuncelle(true);
             }
             else
             {
-                MessageBox.Show("Öğrenci bulunamadı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 // Öğrenci bulunamadığında btnSili devre dışı bırak
                 frm.EnableDisableBtnSil(false);
+                
                 //güncellemeyi devre dışı bırakma
                 frm.EnableDisableBtnGuncelle(false);
             }
