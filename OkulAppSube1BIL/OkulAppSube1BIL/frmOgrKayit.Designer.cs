@@ -36,7 +36,7 @@
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
             this.btnKaydet = new System.Windows.Forms.Button();
-            this.btnBul = new System.Windows.Forms.Button();
+            this.btnBulOgr = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.SilButton = new System.Windows.Forms.Button();
@@ -125,16 +125,16 @@
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
-            // btnBul
+            // btnBulOgr
             // 
-            this.btnBul.Location = new System.Drawing.Point(344, 279);
-            this.btnBul.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBul.Name = "btnBul";
-            this.btnBul.Size = new System.Drawing.Size(100, 28);
-            this.btnBul.TabIndex = 7;
-            this.btnBul.Text = "BUL";
-            this.btnBul.UseVisualStyleBackColor = true;
-            this.btnBul.Click += new System.EventHandler(this.btnBul_Click);
+            this.btnBulOgr.Location = new System.Drawing.Point(344, 279);
+            this.btnBulOgr.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBulOgr.Name = "btnBulOgr";
+            this.btnBulOgr.Size = new System.Drawing.Size(100, 28);
+            this.btnBulOgr.TabIndex = 7;
+            this.btnBulOgr.Text = "BUL";
+            this.btnBulOgr.UseVisualStyleBackColor = true;
+            this.btnBulOgr.Click += new System.EventHandler(this.btnBulOgr_Click);
             // 
             // btnGuncelle
             // 
@@ -177,7 +177,7 @@
             this.Controls.Add(this.SilButton);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnGuncelle);
-            this.Controls.Add(this.btnBul);
+            this.Controls.Add(this.btnBulOgr);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.grpOgrenci);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -196,7 +196,7 @@
         private System.Windows.Forms.Label lblSoyad;
         private System.Windows.Forms.Label lblAd;
         private System.Windows.Forms.Button btnKaydet;
-        private System.Windows.Forms.Button btnBul;
+        private System.Windows.Forms.Button btnBulOgr;
         public System.Windows.Forms.TextBox txtNumara;
         public System.Windows.Forms.TextBox txtSoyad;
         public System.Windows.Forms.TextBox txtAd;
