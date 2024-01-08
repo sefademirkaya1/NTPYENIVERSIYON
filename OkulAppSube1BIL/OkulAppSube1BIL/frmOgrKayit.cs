@@ -142,7 +142,7 @@ namespace OkulAppSube1BIL
             }
         }
 
-        // frmOgrBul formundan gelen btnSil butonunu etkinleştir/devre dışı bırak
+        // ÖğnenciBul formundan gelen btnSil butonunu etkinleştir/devre dışı bırak
         public void EnableDisableBtnSil(bool enable)
         {
             btnSil.Enabled = enable;
